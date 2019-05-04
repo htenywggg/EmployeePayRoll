@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/Cellar/node/12.1.0/bin/node /usr/local/bin/yarn add @material-ui/core
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  12.1.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, scandir '/Users/joshkardos/.config/yarn/link'
+
+npm manifest: 
+  {
+    "name": "timerequest",
+    "version": "0.1.0",
+    "private": true,
+    "proxy": "http://localhost:3001",
+    "main": "HomePage.js",
+    "dependencies": {
+      "@material-ui/core": "^3.5.1",
+      "@material-ui/icons": "^3.0.1",
+      "@okta/okta-react": "^1.1.4",
+      "@okta/okta-signin-widget": "^2.14.0",
+      "react": "^16.6.0",
+      "react-dom": "^16.6.0",
+      "react-router-dom": "^4.3.1",
+      "react-scripts": "2.1.1",
+      "react-twitter-embed": "^2.0.4",
+      "typeface-roboto": "0.0.54",
+      "unfetch": "^4.0.1",
+      "url": "^0.11.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
