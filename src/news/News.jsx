@@ -30,7 +30,7 @@ class News extends Component {
               <Grid item>
                 <TwitterTimelineEmbed
                   sourceType="profile"
-                  screenName="teamrocket172"
+                  screenName="PayrollEmployee"
                   options={{ height: 400, width: 400 }}
                 />
               </Grid>

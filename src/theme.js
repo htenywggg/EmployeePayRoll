@@ -3,9 +3,7 @@ import { createMuiTheme } from "@material-ui/core";
 export default createMuiTheme({
   palette: {
     primary: {
-
-      // main: "#2176AE"
-      main: "#FBB13C"
+      main: "#3f51b5"
     },
     secondary: {
       main: "#57B8FF"
@@ -18,6 +16,9 @@ export default createMuiTheme({
     },
     tertiary_redorange: {
       main: "#FE6847"
+    },
+    white: {
+      main:"#ffffff"
     }
   }
 });

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Employee from "../employees/Employee";
-import Logo from "./rocket.gif";
+import Logo from "./employees_icon.png";
 import { withStyles } from "@material-ui/core/styles";
 import { withAuth } from "@okta/okta-react";
 import Grid from '@material-ui/core/Grid';
@@ -60,9 +60,9 @@ class Home extends Component {
         <Grid container>
           <Grid item xs={4}></Grid>
           <Grid item xs={4} className={classes.landingPage}>
-            <Typography variant="h1">RocketPay</Typography>
+            <Typography variant="h2">Employee Payroll</Typography>
             <Button 
-              color="inherit" 
+              color="#3f51b5"
               variant="contained" 
               size="large"
               className={classes.button}
@@ -70,7 +70,7 @@ class Home extends Component {
               Login
             </Button>
             <div>
-              <img src={Logo} alt="rocket gif"
+              <img src={Logo} alt="employees icon"
                className={classes.logo}
               />
             </div>

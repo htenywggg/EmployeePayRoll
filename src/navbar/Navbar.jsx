@@ -29,7 +29,13 @@ const styles = {
   },
   list: {
     width: 250
-  }
+  },
+    logoutButton: {
+      marginLeft: 10
+    },
+    companyLinksButton: {
+      marginRight: 10
+    }
 };
 
 export default withStyles(styles)(
@@ -114,7 +120,7 @@ export default withStyles(styles)(
         if (this.state.authenticated === null) return null;
         const logInOut = this.state.authenticated ? (
           <div>
-            <Button color="inherit" onClick={this.logout}>
+            <Button variant="contained" color="white" style={styles.logoutButton} onClick={this.logout}>
               Logout
             </Button>
           </div>
@@ -128,8 +134,9 @@ export default withStyles(styles)(
               <Toolbar>
                 <Button
                   variant="contained"
-                  color="primary"
+                  color="white"
                   onClick={this.toggleDrawer(true)}
+                  style={styles.companyLinksButton}
                 >
                   Company Links
                 </Button>   
@@ -138,15 +145,12 @@ export default withStyles(styles)(
                   onClose={this.toggleDrawer(false)}
                 >
                   <div
-                    //tabIndex={0}
-                    //role="button"
                     onClick={this.toggleDrawer(false)}
                     onKeyDown={this.toggleDrawer(false)}
                   >
                     {toolDrawer}
                   </div>
                 </Drawer>
-
                   
                 <Grid Container>
                   <Grid item>
@@ -161,17 +165,9 @@ export default withStyles(styles)(
                       }}
                     >
                       <Grid container>
-                        <Grid item>
-                          <img
-                            src={TwitterLogo}
-                            alt="logo"
-                            style={{
-                              height: "40px",
-                              width: "40px",
-                              paddingRight: 4
-                            }}
-                          />
+
                         </Grid>
+
                         <Grid item>
                           <Typography
                             variant="title"
@@ -182,10 +178,9 @@ export default withStyles(styles)(
                               fontWeight: 450
                             }}
                           >
-                            NEWS FEED
+                            Twitter News Feed
                           </Typography>
                         </Grid>
-                      </Grid>
                     </Link>
                   </Grid>
                 </Grid>
@@ -199,7 +194,7 @@ export default withStyles(styles)(
                 >
                   Employee Payroll
                 </Typography>
-                <Button color="inherit" href="/">
+                <Button color="white" variant="contained" href="/">
                   Home
                 </Button>
                 {logInOut}

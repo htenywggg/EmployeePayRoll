@@ -81,30 +81,7 @@ class Employee extends Component {
       const { classes } = this.props;
       return (
         <Grid item>
-          <Grid container className={classes.infocontainer} spacing={16}>
-            {/* This 4 block is for the left part with employee
-            profile picture and description */}
-            <Grid item xs={4}>
-              <Paper container className={classes.paper}>
-                <Grid
-                  container
-                  justify="flex-start"
-                  direction="column"
-                  alignItems="center"
-                >
-                  <Avatar
-                    alt="Profile Picture"
-                    src="blank-profile.png"
-                    className={classes.avatar}
-                  />
-                  <Typography className={classes.Headings}>
-                    {this.state.first_name} {this.state.last_name}
-                  </Typography>
-                </Grid>
-              </Paper>
-            </Grid>
-            {/* This 8 block is for the right part wth employee 
-            information and settings */}
+          <Grid container className={classes.infocontainer} spacing={16} justify = "center">
             <Grid item xs={8}>
               <Paper className={classes.paper}>
                 <Grid container>
@@ -311,7 +288,7 @@ class Employee extends Component {
                     className={classes.searchInput}
                     direction="row"
                   >
-                    <Grid item xs={9}>
+                    <Grid item xs={8}>
                       <Grid container>
                         <TextField
                           variant="outlined"
@@ -327,7 +304,7 @@ class Employee extends Component {
                         />
                       </Grid>
                     </Grid>
-                    <Grid item xs={2} className={classes.searchButtonContainer}>
+                    <Grid item xs={4} className={classes.searchButtonContainer}>
                       <Button
                         variant="contained"
                         className={classes.searchButton}
